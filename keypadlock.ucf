@@ -1,0 +1,40 @@
+############################################################################
+# Clock
+############################################################################
+
+NET "clk" LOC = P129 | IOSTANDARD = LVTTL | PERIOD = 12 MHZ ;
+
+############################################################################
+# Seven Segment Display
+############################################################################
+
+NET "SevenSeg[7]" LOC = P117 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+NET "SevenSeg[6]" LOC = P116 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+NET "SevenSeg[5]" LOC = P115 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+NET "SevenSeg[4]" LOC = P114 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+NET "SevenSeg[3]" LOC = P113 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+NET "SevenSeg[2]" LOC = P112 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+NET "SevenSeg[1]" LOC = P111 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+NET "SevenSeg[0]" LOC = P110 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+
+NET "EN" LOC = P121 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+
+
+############################################################################
+# LED
+############################################################################
+
+NET "locked" LOC = P31 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ; 
+NET "unlocked" LOC = P32 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+
+
+############################################################################
+# Switches
+############################################################################
+
+NET "B1" LOC = P80 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST | PULLUP ;
+NET "B2" LOC = P79 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST | PULLUP ;
+NET "B3" LOC = P78 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST | PULLUP ;
+NET "B4" LOC = P77 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST | PULLUP ;
+NET "B5" LOC = P76 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST | PULLUP ;
+NET "reset" LOC = P75 | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST | PULLUP ;
